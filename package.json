@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/bornoflightning/flashcards#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
     "nodemon": "^3.0.2",
-    "pub": "^0.2.0"
+    "pub": "^0.2.0",
+    "pug": "^3.0.2"
   }
 }
