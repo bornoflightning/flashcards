@@ -17,7 +17,7 @@ app.use(cookieParser());
 app.set('view engine', 'pug');
 //imports for routes.js folder to use routes
 app.use(mainRoutes);
-app.unsubscribe('./cards', cardRoutes);
+app.use('/cards', cardRoutes);
 
 
 

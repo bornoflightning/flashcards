@@ -1,7 +1,8 @@
-extends layout.pug 
+extends layout.pug
 
 block content
-    include includes/header.pug
-    section#content 
-        h2= prompt
-    include includes/heade.pug
+  section#content
+    h2= text
+    if hint
+      p
+        i Hint: #{hint}
