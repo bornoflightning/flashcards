@@ -13,11 +13,23 @@ const port = 3001;
 //section for middlewear
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(cookieParser());
-//set up the view engine to use PUG
-app.set('view engine', 'pug');
+
+// routing static file to static
+app.use('/static', express.static('public'));
+
+//usual way of using static
+// app.use(express.static(__dirname + '/public'));
+
+
 //imports for routes.js folder to use routes
 app.use(mainRoutes);
 app.use('/cards', cardRoutes);
+
+//set up the view engine to use PUG
+app.set('view engine', 'pug');
+
+
+
 
 
 
